@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">Save on Device</string>
     <string name="app_intent_filter_description">Save on device</string>
-    <string name="multiSaveInfo">If this is enabled, when you share multiple files to the app, it will bring up a dialog for each file allowing you to rename it and select the folder to save it in. Otherwise, you will simply choose a folder to save the files in, and they will all be saved there automatically.</string>
+    <string name="multiSaveInfo">When enabled, you will be prompted to rename and pick a location for each file individually.\n\nWhen disabled, you will choose one folder and all files are saved there automatically.</string>
     <string name="switchText">Save multiple files individually</string>
     <string name="success">Saved successfully</string>
     <string name="nothing">Nothing detected to save</string>

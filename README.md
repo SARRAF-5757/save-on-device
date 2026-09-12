@@ -2,13 +2,17 @@
 
 An Android app that allows you to save files on your device from other apps using the Share or View functionality.
 
-<img src="./.github/readme-images/demo.gif" width="250">
+<p align="center">
+  <img src="./.github/readme-images/demo.gif" width="30%" alt="demo">
+</p>
 
 ## Features
-- Save files from other apps to local storage
-- Save copied text to local storage
+- Save files and shared text from other apps to local storage through the share sheet
+- Fully rewritten with modern Kotlin (Jetpack Compose, Coroutines, type-safe Contracts) replacing deprecated methods
+- Material You design language and color support
+- Supports Android 5.0 and newer, all the way up to Android 16
 
-This fork of the [original](https://github.com/lmj0011/save-on-device) by lmj0011 is just about 25KB and is compatible with all versions of Android. It also supports saving files from the View action in addition to the Share one.
+This is a fork of [Save on device](https://github.com/AbdurazaaqMohammed/save-on-device) by AbdurazaaqMohammed which is a fork of the [original](https://github.com/lmj0011/save-on-device) by lmj0011.
 
 ## License
 

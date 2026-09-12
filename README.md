@@ -1,4 +1,4 @@
-# <img src="./.github/readme-images/ic_launcher-playstore.png" width="48"> Save On Device
+# <img src="./.github/readme-images/ic_launcher-playstore.png" width="25">   Save On Device
 
 An Android app that allows you to save files on your device from other apps using the Share or View functionality.
 

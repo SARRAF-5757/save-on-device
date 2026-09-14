@@ -1,17 +1,17 @@
 plugins {
-    id 'com.android.application'
-    id 'org.jetbrains.kotlin.android'
+    alias libs.plugins.android.application
+    alias libs.plugins.jetbrains.kotlin.plugin.compose
 }
 
 android {
-    compileSdk 35
+    compileSdk 37
 
     defaultConfig {
         applicationId "name.lmj001.savetodevice"
-        minSdk 21
+        minSdk 23
         targetSdk 37
         versionCode 8
-        versionName "0.8.0"
+        versionName "0.8.1"
     }
 
     buildTypes {
@@ -25,30 +25,22 @@ android {
         sourceCompatibility JavaVersion.VERSION_17
         targetCompatibility JavaVersion.VERSION_17
     }
-    kotlinOptions {
-        jvmTarget = '17'
-    }
     buildFeatures {
         compose true
-    }
-    composeOptions {
-        kotlinCompilerExtensionVersion '1.5.14'
     }
     namespace 'name.lmj001.saveondevice'
 }
 
 dependencies {
-    implementation 'androidx.core:core-ktx:1.13.1'
-    implementation 'androidx.lifecycle:lifecycle-runtime-ktx:2.8.2'
-    implementation 'androidx.activity:activity-compose:1.9.0'
+    implementation libs.androidx.core.ktx
+    implementation libs.androidx.lifecycle.runtime.ktx
+    implementation libs.androidx.activity.compose
     
-    def composeBom = platform('androidx.compose:compose-bom:2024.06.00')
-    implementation composeBom
-    implementation 'androidx.compose.ui:ui'
-    implementation 'androidx.compose.ui:ui-graphics'
-    implementation 'androidx.compose.ui:ui-tooling-preview'
-    implementation 'androidx.compose.material3:material3'
+    implementation libs.androidx.compose.ui
+    implementation libs.androidx.compose.ui.graphics
+    implementation libs.androidx.compose.ui.tooling.preview
+    implementation libs.androidx.compose.material3
     
-    debugImplementation 'androidx.compose.ui:ui-tooling'
-    debugImplementation 'androidx.compose.ui:ui-test-manifest'
+    debugImplementation libs.androidx.compose.ui.tooling
+    debugImplementation libs.androidx.compose.ui.test.manifest
 }
